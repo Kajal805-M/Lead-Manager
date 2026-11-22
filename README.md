@@ -1,5 +1,5 @@
-# 🏢 Real Estate AI Sales Copilot & Lead Intelligence Platform
-### *Lead Manager*
+# 🏢Lead Manager- Real Estate AI Sales Copilot & Lead Intelligence Platform
+### 
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-3.0%2B-green.svg)](https://flask.palletsprojects.com/)
@@ -310,6 +310,5 @@ In compliance with the assignment submission guidelines:
 
 ## 🎥 Demo Video & Live Deployment Links
 
-- **Live Deployed URL**: *`[INSERT YOUR LIVE DEPLOYED URL HERE]`*
-- **3-Minute Loom / Demo Video**: *`[INSERT YOUR LOOM / YOUTUBE LINK HERE]`*
-- **GitHub Repository**: *`[INSERT YOUR PUBLIC GITHUB REPO URL HERE]`*
+- **Live Deployed URL**: *`(https://lead-manager-two-psi.vercel.app/)`*
+
