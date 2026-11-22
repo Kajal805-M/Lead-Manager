@@ -39,13 +39,13 @@ from firebase_service import (
 load_dotenv()
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MOCKUP_DIR = os.path.join(BASE_DIR, "mockup")
+FRONTEND_DIR = os.path.join(BASE_DIR, "frontend")
 
 app = Flask(
     __name__,
-    static_folder=MOCKUP_DIR,
+    static_folder=FRONTEND_DIR,
     static_url_path="",
-    template_folder=MOCKUP_DIR
+    template_folder=FRONTEND_DIR
 )
 
 if CORS:
@@ -73,7 +73,19 @@ def ensure_database_seeded():
 @app.route("/")
 def index():
     """Serves the main single-page application dashboard."""
-    return send_from_directory(MOCKUP_DIR, "index.html")
+    index_file = os.path.join(FRONTEND_DIR, "index.html")
+    if os.path.exists(index_file):
+        return send_from_directory(FRONTEND_DIR, "index.html")
+    return jsonify({
+        "status": "online",
+        "message": "Lead Manager backend is running on Vercel. The 'frontend' folder (index.html) was not included in the git deployment.",
+        "solution": "Ensure 'frontend/' is committed to git and redeploy to Vercel.",
+        "endpoints": {
+            "api_status": "/api/status",
+            "api_leads": "/api/leads",
+            "api_benchmarks": "/api/benchmarks"
+        }
+    }), 200
 
 @app.route("/api/status", methods=["GET"])
 def api_status():

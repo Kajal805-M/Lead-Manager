@@ -2,8 +2,8 @@
 const fs = require('fs');
 const path = require('path');
 
-// Extract the CSV parser functions from mockup/app.js
-const appJsPath = path.join(__dirname, '..', 'mockup', 'app.js');
+// Extract the CSV parser functions from frontend/app.js
+const appJsPath = path.join(__dirname, '..', 'frontend', 'app.js');
 const appJsContent = fs.readFileSync(appJsPath, 'utf8');
 
 // Isolate functions for isolated headless testing
