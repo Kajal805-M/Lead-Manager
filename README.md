@@ -310,5 +310,5 @@ In compliance with the assignment submission guidelines:
 
 ## 🎥 Demo Video & Live Deployment Links
 
-- **Live Deployed URL**: *`(https://lead-manager-two-psi.vercel.app/)`*
+- **Live Deployed URL**: 'https://lead-manager-two-psi.vercel.app/'
 
