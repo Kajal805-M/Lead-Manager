@@ -1,5 +1,5 @@
 # 🏢 Real Estate AI Sales Copilot & Lead Intelligence Platform
-### *Masal AI — Forward Deployed Engineer (FDE) Round 2 Assignment*
+### *Lead Manager*
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
 [![Flask](https://img.shields.io/badge/Flask-3.0%2B-green.svg)](https://flask.palletsprojects.com/)
