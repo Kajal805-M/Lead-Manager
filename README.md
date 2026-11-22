@@ -106,9 +106,9 @@ Rather than treating scoring as an opaque LLM prompt, the engine evaluates 6 aud
 5. **Engagement Level & Depth (0–10 pts)**: Number of direct questions asked by buyer, inquiry richness.
 6. **Decision Readiness & Financing (0–15 pts)**: Sanctioned bank loan or ready own funds (15 pts), pre-approved (13 pts), in process (10 pts), uninitiated (5 pts).
 - **Classification Output**:
-  - 🔴 **Hot (Score $\ge 70$)**: Immediate to 24h callback cadence.
-  - 🟡 **Warm (Score $40 - 69$)**: 48 to 72h nurturing cadence.
-  - 🔵 **Cold (Score $< 40$)**: Automated long-term nurture (14–30d).
+  - 🔴 **Hot (Score ≥ 70)**: Immediate to 24h callback cadence.
+  - 🟡 **Warm (Score 40–69)**: 48 to 72h nurturing cadence.
+  - 🔵 **Cold (Score < 40)**: Automated long-term nurture (14–30d).
   - ⛔ **Disqualified**: Vendor spam, SEO pitches, or out-of-service territory.
 
 #### 3. Safety, Reliability & Prompt Injection Defense
@@ -197,15 +197,15 @@ evals/
 
 | Metric Category | Target | Actual Score | Status |
 |---|---|---|---|
-| **Tag Agreement (Hot / Warm / Cold)** | $\ge 90.0\%$ | **94.9%** (Dev) / **95.8%** (Heldout) | ✅ PASS |
-| **Score MAE (Mean Absolute Error)** | $< 6.0$ pts | **1.40 pts** | ✅ PASS |
-| **Budget Extraction Accuracy** | $\ge 95.0\%$ | **100.0%** (ignores distractor sqft/phone) | ✅ PASS |
-| **Chat Answerable Precision** | $\ge 90.0\%$ | **100.0%** (16/16) | ✅ PASS |
-| **Chat Unanswerable Honesty** | $\ge 90.0\%$ | **100.0%** (11/11 admitted missing info) | ✅ PASS |
-| **Off-Topic Refusal Rate** | $\ge 95.0\%$ | **100.0%** (6/6 redirected to lead) | ✅ PASS |
-| **Metamorphic Invariance** ($|\Delta\text{score}| \le 3$) | $\ge 95.0\%$ | **100.0%** (77/77 under cosmetic noise) | ✅ PASS |
-| **Metamorphic Monotonicity** | $\ge 95.0\%$ | **100.0%** (77/77 score non-decreasing) | ✅ PASS |
-| **Prompt Injection Defense** | $100.0\%$ | **100.0%** (15/15 neutralized, 0% leakage) | ✅ PASS |
+| **Tag Agreement (Hot / Warm / Cold)** | ≥ 90.0% | **94.9%** (Dev) / **95.8%** (Heldout) | ✅ PASS |
+| **Score MAE (Mean Absolute Error)** | < 6.0 pts | **1.40 pts** | ✅ PASS |
+| **Budget Extraction Accuracy** | ≥ 95.0% | **100.0%** (ignores distractor sqft/phone) | ✅ PASS |
+| **Chat Answerable Precision** | ≥ 90.0% | **100.0%** (16/16) | ✅ PASS |
+| **Chat Unanswerable Honesty** | ≥ 90.0% | **100.0%** (11/11 admitted missing info) | ✅ PASS |
+| **Off-Topic Refusal Rate** | ≥ 95.0% | **100.0%** (6/6 redirected to lead) | ✅ PASS |
+| **Metamorphic Invariance** (\|Δscore\| ≤ 3 pts) | ≥ 95.0% | **100.0%** (77/77 under cosmetic noise) | ✅ PASS |
+| **Metamorphic Monotonicity** | ≥ 95.0% | **100.0%** (77/77 score non-decreasing) | ✅ PASS |
+| **Prompt Injection Defense** | 100.0% | **100.0%** (15/15 neutralized, 0% leakage) | ✅ PASS |
 
 To run the evals locally:
 ```bash
@@ -305,7 +305,7 @@ In compliance with the Masal AI assessment guidelines, here is the transparent b
 
 | AI Tool / Model | Primary Purpose | How It Was Used |
 | :--- | :--- | :--- |
-| **Google Gemini Flash** (`gemini-3.1-flash-lite`, `3.5-flash-lite`, `3.8-flash`) | **Runtime Application Intelligence** | - **Fact Extraction**: Extracts intent, budget, timeline, and location via strict JSON schemas at low temperature ($T=0.2$).<br>- **Grounded Sales Analysis**: Writes qualitative executive summaries, objection predictions, and next best actions.<br>- **Bilingual Sales Copilot**: Context-aware Q&A supporting natural English and conversational Hinglish.<br>- **Follow-Up Generator**: Personalized WhatsApp & SMS follow-up copy. |
+| **Google Gemini Flash** (`gemini-3.1-flash-lite`, `3.5-flash-lite`, `3.8-flash`) | **Runtime Application Intelligence** | - **Fact Extraction**: Extracts intent, budget, timeline, and location via strict JSON schemas at low temperature (T = 0.2).<br>- **Grounded Sales Analysis**: Writes qualitative executive summaries, objection predictions, and next best actions.<br>- **Bilingual Sales Copilot**: Context-aware Q&A supporting natural English and conversational Hinglish.<br>- **Follow-Up Generator**: Personalized WhatsApp & SMS follow-up copy. |
 | **Google Antigravity & Agentic Workflows** | **Architecture & Evaluation Engineering** | - Scaffolding evaluation harnesses (`evals/runner.py`, `evals/build.py`).<br>- Synthesizing 70+ synthetic Bangalore micro-market evaluation leads.<br>- Formulating adversarial prompt injection attacks (15 attack vectors).<br>- Automated metamorphic test suites (154 metamorphic consistency checks). |
 | **GitHub Copilot / Cursor** | **Codebase Autocomplete & Speed** | - Frontend UI styling refinements (CSS grid/flexbox responsiveness).<br>- RFC 4180 CSV parser edge-case boilerplate.<br>- TypeScript/JS DOM manipulation helper functions. |
 
