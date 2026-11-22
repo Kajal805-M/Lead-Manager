@@ -186,8 +186,8 @@ python -m evals.runner --split heldout
 
 ### 1. Clone Repository & Setup Virtual Environment
 ```bash
-git clone https://github.com/<your-username>/real-estate-ai-copilot.git
-cd real-estate-ai-copilot
+git clone https://github.com/Kajal805-M/Lead-Manager.git
+cd Lead-Manager
 
 # Create virtual environment
 python -m venv venv
@@ -250,7 +250,7 @@ In compliance with the Masal AI assessment guidelines, here is the transparent b
 
 | AI Tool / Model | Primary Purpose | How It Was Used |
 | :--- | :--- | :--- |
-| **Google Gemini Flash** (`gemini-3.1-flash-lite`, `3.5-flash-lite`, `3.8-flash`) | **Runtime Application Intelligence** | - **Fact Extraction**: Extracts intent, budget, timeline, and location via strict JSON schemas at low temperature (T = 0.2).<br>- **Grounded Sales Analysis**: Writes qualitative executive summaries, objection predictions, and next best actions.<br>- **Bilingual Sales Copilot**: Context-aware Q&A supporting natural English and conversational Hinglish.<br>- **Follow-Up Generator**: Personalized WhatsApp & SMS follow-up copy. |
+| **Google Gemini Flash** ( `3.5-flash-lite`) | **Runtime Application Intelligence** | - **Fact Extraction**: Extracts intent, budget, timeline, and location via strict JSON schemas at low temperature (T = 0.2).<br>- **Grounded Sales Analysis**: Writes qualitative executive summaries, objection predictions, and next best actions.<br>- **Bilingual Sales Copilot**: Context-aware Q&A supporting natural English and conversational Hinglish.<br>- **Follow-Up Generator**: Personalized WhatsApp & SMS follow-up copy. |
 | **Google Antigravity & Agentic Workflows** | **Architecture & Evaluation Engineering** | - Scaffolding evaluation harnesses (`evals/runner.py`, `evals/build.py`).<br>- Synthesizing 70+ synthetic Bangalore micro-market evaluation leads.<br>- Formulating adversarial prompt injection attacks (15 attack vectors).<br>- Automated metamorphic test suites (154 metamorphic consistency checks). |
 | **GitHub Copilot / Cursor** | **Codebase Autocomplete & Speed** | - Frontend UI styling refinements (CSS grid/flexbox responsiveness).<br>- RFC 4180 CSV parser edge-case boilerplate.<br>- TypeScript/JS DOM manipulation helper functions. |
 
@@ -266,5 +266,5 @@ To guarantee **100% mathematical auditability** and eliminate hallucination risk
 
 - **Live Deployed Application**: [https://lead-manager-two-psi.vercel.app/](https://lead-manager-two-psi.vercel.app/)
 - **GitHub Repository**: [https://github.com/Kajal805-M/Lead-Manager](https://github.com/Kajal805-M/Lead-Manager)
-- **3-Minute Loom / Demo Video**: *`[INSERT YOUR LOOM / DEMO VIDEO LINK HERE]`*
+- **3-Minute Loom / Demo Video**: https://youtu.be/tembzSdH_Ws
 
