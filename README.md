@@ -301,14 +301,25 @@ Open your browser at: **`http://127.0.0.1:5000`**
 
 ## 🤝 AI Usage Disclosure
 
-In compliance with the assignment submission guidelines:
-- **Google Antigravity / Gemini**: Used for prompt engineering design, fine-tuning the 6-factor scoring benchmarks, assisting with RFC 4180 CSV edge case handling, and synthesizing the 70 synthetic leads in the evaluation dataset.
-- **GitHub Copilot / Cursor**: Used for boilerplate autocomplete and CSS grid responsiveness refinement.
-- **Architectural Design, Scoring Rules & Evaluation Harness**: Designed, verified, and debugged end-to-end to ensure zero hallucinations and production readiness.
+In compliance with the Masal AI assessment guidelines, here is the transparent breakdown of all AI tools, models, and workflows utilized during the development and evaluation of this platform:
+
+| AI Tool / Model | Primary Purpose | How It Was Used |
+| :--- | :--- | :--- |
+| **Google Gemini Flash** (`gemini-3.1-flash-lite`, `3.5-flash-lite`, `3.8-flash`) | **Runtime Application Intelligence** | - **Fact Extraction**: Extracts intent, budget, timeline, and location via strict JSON schemas at low temperature ($T=0.2$).<br>- **Grounded Sales Analysis**: Writes qualitative executive summaries, objection predictions, and next best actions.<br>- **Bilingual Sales Copilot**: Context-aware Q&A supporting natural English and conversational Hinglish.<br>- **Follow-Up Generator**: Personalized WhatsApp & SMS follow-up copy. |
+| **Google Antigravity & Agentic Workflows** | **Architecture & Evaluation Engineering** | - Scaffolding evaluation harnesses (`evals/runner.py`, `evals/build.py`).<br>- Synthesizing 70+ synthetic Bangalore micro-market evaluation leads.<br>- Formulating adversarial prompt injection attacks (15 attack vectors).<br>- Automated metamorphic test suites (154 metamorphic consistency checks). |
+| **GitHub Copilot / Cursor** | **Codebase Autocomplete & Speed** | - Frontend UI styling refinements (CSS grid/flexbox responsiveness).<br>- RFC 4180 CSV parser edge-case boilerplate.<br>- TypeScript/JS DOM manipulation helper functions. |
+
+### 🛡️ What Was Deliberately Kept Deterministic (Zero-LLM Logic):
+To guarantee **100% mathematical auditability** and eliminate hallucination risks in high-stakes sales operations:
+1. **6-Factor Lead Scoring (`scoring_engine.py` / `rules.py`)**: 100% deterministic code based on real Bangalore micro-market pricing baselines (Whitefield, Sarjapur, Electronic City, Hebbal, etc.).
+2. **Security & Guardrail Fencing**: Input sanitization, length boundaries, delimiter protection (`<customer_inquiry>`), and prompt injection blocks are handled before any LLM invocation.
+3. **Model Fallback Chain**: Deterministic cascading retry across Gemini Flash models with instant fallback to heuristic analysis on network degradation.
 
 ---
 
 ## 🎥 Demo Video & Live Deployment Links
 
-- **Live Deployed URL**: 'https://lead-manager-two-psi.vercel.app/'
+- **Live Deployed Application**: [https://lead-manager-two-psi.vercel.app/](https://lead-manager-two-psi.vercel.app/)
+- **GitHub Repository**: [https://github.com/Kajal805-M/Lead-Manager](https://github.com/Kajal805-M/Lead-Manager)
+- **3-Minute Loom / Demo Video**: *`[INSERT YOUR LOOM / DEMO VIDEO LINK HERE]`*
 
