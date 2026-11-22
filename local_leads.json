@@ -1,0 +1,110 @@
+[
+  {
+    "budget": "50 L",
+    "created_at": "2026-11-22T06:02:36.633581",
+    "id": "L19",
+    "message": "price list details please?",
+    "priority": "Cold",
+    "scoring_reason": "Timeline casual or unstated, Stated budget ₹50 L, Rental lease expiration driver",
+    "timeline": "Not decided",
+    "score_breakdown": {
+      "budget": {
+        "label": "Budget Readiness",
+        "score": 10,
+        "max": 20
+      },
+      "readiness": {
+        "label": "Decision Readiness",
+        "score": 5,
+        "max": 15
+      },
+      "intent": {
+        "label": "Purchase Intent",
+        "score": 12,
+        "max": 20
+      },
+      "engagement": {
+        "label": "Inquiry Depth",
+        "score": 2,
+        "max": 10
+      },
+      "requirement": {
+        "label": "Property Specificity",
+        "score": 6,
+        "max": 15
+      },
+      "timeline": {
+        "label": "Buying Timeline",
+        "score": 3,
+        "max": 20
+      }
+    },
+    "ai_analysis": {
+      "requirements": "Apartment in Bangalore, Budget: INR 50 Lakhs.",
+      "next_action": "Qualify the preferred micro-market in Bangalore and send a tailored digital brochure along with a soft follow-up call to determine if they are looking for investment or self-use.",
+      "summary": "Siddharth is a prospective buyer looking for an apartment in Bangalore with a budget of INR 50 Lakhs. He is currently in the information-gathering phase with no immediate timeline.",
+      "suggested_response": "Hi Siddharth, thank you for reaching out. To help me share the most relevant price list and floor plans for apartments under 50L in Bangalore, could you please let me know which areas you are currently exploring? Also, are you looking for immediate possession or pre-launch projects?",
+      "objections": [
+        "Budget constraint for prime Bangalore locations",
+        "Lack of immediate purchase intent",
+        "Potential competition from lower-priced secondary market options",
+        "Price sensitivity"
+      ],
+      "intent": "Low urgency; the buyer is currently in the early research stage, primarily focused on price discovery rather than immediate transaction."
+    },
+    "breakdown": {
+      "budget": {
+        "label": "Budget Readiness",
+        "score": 10,
+        "max": 20
+      },
+      "readiness": {
+        "label": "Decision Readiness",
+        "score": 5,
+        "max": 15
+      },
+      "intent": {
+        "label": "Purchase Intent",
+        "score": 12,
+        "max": 20
+      },
+      "engagement": {
+        "label": "Inquiry Depth",
+        "score": 2,
+        "max": 10
+      },
+      "requirement": {
+        "label": "Property Specificity",
+        "score": 6,
+        "max": 15
+      },
+      "timeline": {
+        "label": "Buying Timeline",
+        "score": 3,
+        "max": 20
+      }
+    },
+    "updated_at": "2026-11-22T06:02:36.633561",
+    "urgency_label": "Automated nurture (14-30d)",
+    "followup": {
+      "cadence": "Every 14 days",
+      "due": "In 14 Days",
+      "window": "Anytime",
+      "goal": "Send monthly micro-market newsletter & re-qualify.",
+      "time_badge": "Next Wk",
+      "scheduled": "In 14 Days",
+      "status": "scheduled"
+    },
+    "location": "Bangalore",
+    "property_requirement": "Apartment",
+    "chat_history": [
+      {
+        "sender": "assistant",
+        "text": "I have analyzed **Siddharth B** (Cold Lead, Score: 38/100). Ask me anything about their inquiry, requirements, objections, or strategy in English or Hinglish!"
+      }
+    ],
+    "score": 38,
+    "phone": "+91 99001 23456",
+    "name": "Siddharth B"
+  }
+]

@@ -1,0 +1,113 @@
+# ==============================================================================
+# Architecture Draft & Working Files
+# ==============================================================================
+Evel_example/architecture-professional.html
+Eval_example/architecture-professional.html
+architecture-professional.html
+
+# ==============================================================================
+# Security & Credentials (CRITICAL - DO NOT COMMIT)
+# ==============================================================================
+.env
+.env.*
+!.env.example
+firebase_credentials.json
+*serviceAccountKey*.json
+*credentials*.json
+*.pem
+*.key
+*.cert
+
+# ==============================================================================
+# Python Cache & Bytecode
+# ==============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==============================================================================
+# Virtual Environments
+# ==============================================================================
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ==============================================================================
+# Testing, Coverage & Evaluation Cache
+# ==============================================================================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+eval_results.json
+eval_scorecard*.json
+
+# ==============================================================================
+# Node & Frontend (if applicable)
+# ==============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ==============================================================================
+# Logs & Local Databases
+# ==============================================================================
+*.log
+*.sqlite
+*.sqlite3
+*.db
+
+# ==============================================================================
+# Vercel & Deployment
+# ==============================================================================
+.vercel/
+.vercel
+
+# ==============================================================================
+# Editor & IDE Directories
+# ==============================================================================
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+
+# ==============================================================================
+# Operating System Files
+# ==============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
